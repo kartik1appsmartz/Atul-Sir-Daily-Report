@@ -3,7 +3,7 @@ name: Android Daily Users Report
 on:
   schedule:
     # 11:00 AM IST = 05:30 UTC
-    - cron: "30 7 * * *"
+    - cron: "30 3 * * *"
 
   workflow_dispatch:
 
