@@ -48,8 +48,8 @@ SERVICE_ACCOUNT_PATH = os.environ.get(
 
 # Email configuration
 SENDER_EMAIL = "kartik.goyal@appsmartz.com"
-RECEIVER_EMAIL = "rajveer.kaur@appsmartz.com"
-# CC_EMAILS=["harshdeep.singla@appsmartz.com"]
+RECEIVER_EMAIL ="atul@appsmartz.com"
+CC_EMAILS=["harshdeep.singla@appsmartz.com"]
 BCC_EMAILS = [
     "rajveer.kaur@appsmartz.com"
     
@@ -1298,8 +1298,8 @@ message = MIMEMultipart("related")
 message["From"] = SENDER_EMAIL
 
 message["To"] = RECEIVER_EMAIL
-# message["Cc"] = ", ".join(CC_EMAILS)
-# message["Bcc"] = ", ".join(BCC_EMAILS)
+message["Cc"] = ", ".join(CC_EMAILS)
+message["Bcc"] = ", ".join(BCC_EMAILS)
 message["Subject"] = email_subject
 
 
@@ -1479,5 +1479,5 @@ print(
     os.path.abspath(IMAGE_FILE)
 )
 print("To:", RECEIVER_EMAIL)
-# print("CC:", CC_EMAILS)
-# print("BCC:", BCC_EMAILS)
+print("CC:", CC_EMAILS)
+print("BCC:", BCC_EMAILS)
