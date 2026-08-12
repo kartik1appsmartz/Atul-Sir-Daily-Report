@@ -1,10 +1,13 @@
 name: Android Daily Users Report
 
 on:
-  push:
   schedule:
-    # 9:52 AM IST = 4:22 AM UTC
-    - cron: "30 4 * * *"
+    # Runs automatically every day at 10:18 AM IST
+    # 10:18 AM IST = 04:48 AM UTC
+    - cron: "48 4 * * *"
+
+  # Allows manual execution from GitHub Actions
+  workflow_dispatch:
 
 jobs:
   daily-report:
