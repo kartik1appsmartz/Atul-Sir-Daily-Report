@@ -3,7 +3,6 @@ name: Android Daily Users Report
 on:
   schedule:
     # TEST: Run automatically every 5 minutes
-    # Using India Standard Time
     - cron: "*/5 * * * *"
       timezone: "Asia/Kolkata"
 
