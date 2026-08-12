@@ -2,11 +2,12 @@ name: Android Daily Users Report
 
 on:
   schedule:
-    # Runs automatically every day at 10:18 AM IST
-    # 10:18 AM IST = 04:48 AM UTC
-    - cron: "48 4 * * *"
+    # TEST: Run automatically every 5 minutes
+    # Using India Standard Time
+    - cron: "*/5 * * * *"
+      timezone: "Asia/Kolkata"
 
-  # Allows manual execution from GitHub Actions
+  # Allow manual execution from GitHub Actions
   workflow_dispatch:
 
 jobs:
