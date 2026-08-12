@@ -2,11 +2,10 @@ name: Android Daily Users Report
 
 on:
   schedule:
-    # TEST: Run at 12:05 PM IST
-    - cron: "5 12 * * *"
+    # TEST: Today at 12:15 PM IST
+    - cron: "15 12 * * *"
       timezone: "Asia/Kolkata"
 
-  # Allow manual execution from GitHub Actions
   workflow_dispatch:
 
 jobs:
