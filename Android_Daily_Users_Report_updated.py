@@ -48,7 +48,7 @@ SERVICE_ACCOUNT_PATH = os.environ.get(
 
 # Email configuration
 SENDER_EMAIL = "kartik.goyal@appsmartz.com"
-RECEIVER_EMAIL ="shubham.sahu@appsmartz.com"
+RECEIVER_EMAIL ="atul@appsmartz.com"
 CC_EMAILS=["harshdeep.singla@appsmartz.com"]
 BCC_EMAILS = [
     "rajveer.kaur@appsmartz.com"
