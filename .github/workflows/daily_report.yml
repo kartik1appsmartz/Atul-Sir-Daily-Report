@@ -2,9 +2,9 @@ name: Android Daily Users Report
 
 on:
   schedule:
-    # TEST: Today at 12:15 PM IST
-    - cron: "15 12 * * *"
-      timezone: "Asia/Kolkata"
+    # Trigger at 1:15 PM IST (7:45 AM UTC)
+    # Note: GitHub may delay execution by 10-30 minutes based on queue loads
+    - cron: "15 7 * * *"
 
   workflow_dispatch:
 
